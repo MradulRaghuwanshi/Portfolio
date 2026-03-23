@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mradul Raghuwanshi - Full Stack Developer | MERN Stack Engineer | Startup Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="loading">
+    <!-- Animated Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                MR
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#startups" class="nav-link">Startups</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certifications" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">Mradul Raghuwanshi</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typing-text"></span>
+            </p>
+            <p class="hero-desc">
+                Passionate about building innovative digital products and scalable startup solutions that solve real-world problems.
+            </p>
+            <div class="hero-buttons">
+                <a href="https://drive.google.com/file/d/1cLzy0pHPjXjzCHdTZED6N59S8sdjxYNn/view?usp=sharing" class="btn btn-primary">
+                    <i class="fas fa-eye"></i> View CV
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-paper-plane"></i> Contact Me
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+                <img src="WhatsApp_Image_2026-03-23_at_11.55.22_PM-removebg-preview.png" alt="Mradul Raghuwanshi - Profile" class="profile-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Modal -->
+    <!-- <div id="projects-modal" class="projects-modal">
+        <div class="modal-content">
+            <button id="close-modal" class="close-btn">&times;</button>
+            <h2 class="modal-title">All Projects & Certificates</h2>
+            <!-- <div id="modal-projects-grid" class="projects-grid">
+                <!-- Projects will be populated by JS -->
+            </div>
+        </div>
+    </div> 
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Computer Science student and passionate Full Stack Developer with expertise in MERN stack. 
+                        I specialize in creating scalable web applications and innovative startup solutions.
+                    </p>
+                    <p>
+                        With hands-on experience in freelancing for restaurants and small businesses, I build practical digital 
+                        solutions like POS systems, client management tools, and business automation platforms.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="50">0</span>+
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="2">0</span>+
+                            <span class="stat-label">Years Exp</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="98">0</span>+
+                            <span class="stat-label">DSA Problems</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-progress">
+                    <div class="skill-item">
+                        <span class="tech-link" data-tooltip="React: JavaScript library for building fast user interfaces with component-based architecture">React</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="tech-link" data-tooltip="Node.js: JavaScript runtime built on Chrome's V8 engine for scalable server-side applications">Node.js</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="tech-link" data-tooltip="JavaScript: The programming language of the web that powers interactive web pages">JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="tech-link" data-tooltip="TypeScript: Superset of JavaScript that adds static types for more robust code">TypeScript</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="tag tech-link" data-tooltip="C++: High-performance programming language for systems software and games">C++</span>
+                        <span class="tag tech-link" data-tooltip="C: Foundational systems programming language with low-level memory access">C</span>
+                        <span class="tag tech-link" data-tooltip="Python: Versatile high-level language known for simplicity and rapid development">Python</span>
+                        <span class="tag tech-link" data-tooltip="PHP: Server-side scripting language designed for web development">PHP</span>
+                        <span class="tag tech-link" data-tooltip="JavaScript: The programming language of the web that powers interactive web pages">JavaScript</span>
+                        <span class="tag tech-link" data-tooltip="Java: Object-oriented language used for enterprise applications and Android">Java</span>
+                        <span class="tag tech-link" data-tooltip="TypeScript: Superset of JavaScript that adds static types for more robust code">TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fab fa-react"></i> Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="tag react tech-link" data-tooltip="React: JavaScript library for building fast user interfaces with component-based architecture">React</span>
+                        <span class="tag tech-link" data-tooltip="Node.js: JavaScript runtime built on Chrome's V8 engine for scalable server-side applications">Node.js</span>
+                        <span class="tag tech-link" data-tooltip="Express: Minimalist web framework for Node.js applications">Express</span>
+                        <span class="tag tech-link" data-tooltip="HTML/CSS: Core web technologies - structure and styling foundation">HTML/CSS</span>
+                        <span class="tag tech-link" data-tooltip="Bootstrap: Popular CSS framework for responsive mobile-first sites">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-tags">
+                        <span class="tag tech-link" data-tooltip="MySQL: Popular open-source relational database management system">MySQL</span>
+                        <span class="tag tech-link" data-tooltip="MongoDB: NoSQL document-oriented database for flexible data storage">MongoDB</span>
+                        <span class="tag tech-link" data-tooltip="Supabase: Open source Firebase alternative with PostgreSQL backend">Supabase</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Problem Solving</span>
+                        <span class="tag">Adaptability</span>
+                        <span class="tag">Teamwork</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Startups Section -->
+    <section id="startups" class="section startups">
+        <div class="container">
+            <h2 class="section-title">Startup Journey</h2>
+            <p class="section-subtitle" style="text-align: center; padding: 1.5%;">Building innovative digital solutions for businesses</p>
+            <div class="startups-grid">
+                <div class="startup-card">
+                    <div class="startup-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>SparkServes</h3>
+                    <p>SparkServes is a technology startup focused on building smart digital solutions for restaurants and small businesses. The company develops modern web-based systems that automate daily business operations such as billing, order management, customer communication, and business analytics.</p>
+                    <p><strong>Vision:</strong> To empower small and medium-sized businesses with affordable and intelligent digital tools that simplify operations and accelerate business growth.</p>
+                    <a href="https://www.sparkserves.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-small">
+                        <i class="fas fa-external-link-alt"></i> Visit Website
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-preview-panel">
+                <div id="projects-preview-grid" class="projects-grid"></div>
+                <button id="more-projects-btn" class="btn btn-secondary cert-section-btn" type="button">
+                    <i class="fas fa-arrow-right"></i> View all 11
+                </button>
+            </div>
+
+            <div id="projects-gallery-page" class="cert-gallery-page" hidden>
+                <div class="cert-gallery-header">
+                    <div>
+                        <p class="cert-gallery-kicker">Project Archive</p>
+                        <h3>All 11 Projects</h3>
+                    </div>
+                    <button id="close-projects-btn" class="btn btn-primary btn-small" type="button">Back to Preview</button>
+                </div>
+                <div id="projects-gallery-grid" class="projects-grid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Freelancing Experience Section -->
+    <section id="experience" class="section experience reveal">
+        <div class="container">
+            <h2 class="section-title">Freelancing Experience</h2>
+            <p class="section-subtitle" style="text-align: center;">Real client projects that showcase practical expertise</p>
+            <div class="freelance-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="12">0</span>+
+                    <span class="stat-label">Client Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="8">0</span>+
+                    <span class="stat-label">Live Websites</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="5">0</span>+
+                    <span class="stat-label">Business Clients</span>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-dot"></div>
+                <div class="timeline-item" style="background-color: #4c687b;opacity: 37%; border-radius: 5%; padding: 4%; height: 350px;width: 377px; ">
+                    
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Website Development - Funngro</h3>
+                        <ul class="achievement-list">
+                            <li><i class="fas fa-check-circle"></i> Delivered 5+ responsive business websites</li>
+                            <li><i class="fas fa-check-circle"></i> UI/UX design with modern frameworks (React/Bootstrap)</li>
+                            <li><i class="fas fa-check-circle"></i> SEO optimized for better client visibility</li>
+                            <li><i class="fas fa-check-circle"></i> Digital branding & performance optimization</li>
+                        </ul>
+                        <span class="timeline-date">2023 - Present</span>
+                    </div>
+                </div>
+                <!-- <div class="timeline-dot"></div> -->
+                <div class="timeline-item" >
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content" style="background-color: #4c687b;opacity: 37%; border-radius: 5%; padding: 4%; height: 350px;width: 377px; ;">
+                        <div class="timeline-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Restaurant Web Solutions</h3>
+                        <ul class="achievement-list">
+                            <li><i class="fas fa-check-circle"></i> Built POS & ordering systems for 3 restaurant chains</li>
+                            <li><i class="fas fa-check-circle"></i> WhatsApp integration for order notifications</li>
+                            <li><i class="fas fa-check-circle"></i> Admin dashboards with analytics</li>
+                            <li><i class="fas fa-check-circle"></i> Mobile-responsive designs</li>
+                        </ul>
+                        <span class="timeline-date">2022 - 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">Academic Background</p>
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <h3 class="education-degree">Bachelor of Computer Science</h3>
+                    <p>Currently pursuing Computer Science degree in Lovely professional university with focus on software engineering, data structures, algorithms, and modern web technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <p class="section-subtitle">Industry-recognized certifications showcasing technical expertise</p>
+
+            <div class="cert-preview-panel">
+                <div id="cert-preview-grid" class="certifications-grid"></div>
+                <button id="more-certs-btn" class="btn btn-secondary cert-section-btn" type="button">
+                    <i class="fas fa-arrow-right"></i> View all 17
+                </button>
+            </div>
+
+            <div id="cert-gallery-page" class="cert-gallery-page" hidden>
+                <div class="cert-gallery-header">
+                    <div>
+                        <p class="cert-gallery-kicker">Certificate Archive</p>
+                        <h3>All 17 Certificates</h3>
+                    </div>
+                    <button id="close-certs-btn" class="btn btn-primary btn-small" type="button">Back to Preview</button>
+                </div>
+                <div id="cert-gallery-grid" class="certifications-grid cert-gallery-grid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <!-- <div id="cert-modal" class="cert-modal">
+        <div class="modal-content">
+            <button id="close-cert-modal" class="close-btn">&times;</button>
+            <h2 class="modal-title" id="cert-modal-title">Certificate</h2>
+            <div class="cert-modal-body">
+                <img id="cert-modal-image" src="" alt="Certificate" class="cert-image">
+                <div class="cert-details">
+                    <p id="cert-modal-desc"></p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>mradulraghuwanshi@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9238023903</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/mradul-raghuwanshi-"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/MradulRaghuwanshi"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/MradulRagh66597"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p style="align-items: center;">&copy; 2024 Mradul Raghuwanshi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
